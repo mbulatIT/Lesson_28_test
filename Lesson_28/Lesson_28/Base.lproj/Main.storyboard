@@ -26,17 +26,30 @@
                                     <action selector="feature2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZqN-Xz-d8t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUU-9u-gq5">
+                                <rect key="frame" x="20" y="128" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5pQ-ir-gd7"/>
+                                </constraints>
+                                <state key="normal" title="Feature 1"/>
+                                <connections>
+                                    <action selector="feature1ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcr-hg-eB5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUU-9u-gq5" secondAttribute="trailing" constant="20" id="0aT-7B-xww"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="be0-tu-bYf" secondAttribute="trailing" constant="20" id="M0T-5T-ZpM"/>
                             <constraint firstItem="be0-tu-bYf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OYH-ZG-aCs"/>
+                            <constraint firstItem="KUU-9u-gq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PEw-Z6-hM9"/>
                             <constraint firstItem="be0-tu-bYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xfj-j7-SaF"/>
+                            <constraint firstItem="KUU-9u-gq5" firstAttribute="top" secondItem="be0-tu-bYf" secondAttribute="bottom" constant="20" id="zBg-Pu-gNG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="feature2Button" destination="be0-tu-bYf" id="iUA-sx-Jzz"/>
+                        <outlet property="feature1Button" destination="KUU-9u-gq5" id="6Ai-ox-QME"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
